@@ -4,7 +4,7 @@ pipeline {
         stage ('SCM checkout'){
             steps{
                 retry(3){
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SupunTJ/3998-jayaweera']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MalinduDissanayaka/3909-dissanayaka']])
                 }
             }
       
