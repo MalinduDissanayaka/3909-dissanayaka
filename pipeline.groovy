@@ -11,13 +11,13 @@ pipeline {
         }
         stage('build docker'){
             steps {
-                sh 'docker build -t Supun3998/3998-jayaweera .'
+                sh 'docker build -t Malindu3909/3909-dissanayaka .'
             }
         
         }
          stage('run'){
             steps{
-                sh 'docker run -d -p 5000:3000 Supun3998/3998-jayaweera'
+                sh 'docker run -d -p 5000:3000 Malindu3909/3909-dissanayaka'
          }
          }
          stage('show running containners'){
